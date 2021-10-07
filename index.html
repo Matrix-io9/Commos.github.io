@@ -14,6 +14,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<style>
+	
+.flex-container {
+  display: flex;
+  justify-content:space-around;
+}
+
 .square_btn{
     display: inline-block;
     position: relative;
@@ -62,6 +68,12 @@
 .square_btn:active:after,
 .square_btn:active:before {/*on click*/
     content: none;/*Border disappears*/
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }
 </style>
 
@@ -706,13 +718,22 @@
 			</section>
 
       <section class=" section">
-      <div class="container" align="center">
+      <div class="flex-container">
       
-      <div class="card bg-light mb-3" style="width: 17rem;">
+      <div class="card bg-light mb-3" style="width: 16rem;">
         <img class="card-img-top" src="./src/images/d1.png" width="100%" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Info Session | Open Source</h5>
-          <p class="card-text">What is Open Source and its benefits | CommOS: Hacktoberfest' 21.</p>
+          <p class="card-text">What is Open Source and its benefits.</p>
+          <a href="https://youtu.be/BLh20_toee0" class="btn btn-primary">Watch Stream!</a>
+        </div>
+      </div>
+      
+      <div class="card bg-light mb-3" style="width: 16rem;">
+        <img class="card-img-top" src="./src/images/d1.png" width="100%" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Hands On WorkShop | CommOS </h5>
+          <p class="card-text">How To Contribute Using GitHub For CommOS.</p>
           <a href="https://youtu.be/BLh20_toee0" class="btn btn-primary">Watch Stream!</a>
         </div>
       </div>

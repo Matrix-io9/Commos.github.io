@@ -2049,7 +2049,7 @@ button{
 	.contact-us-container {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: flex-start;
 	}
 	.contact-us {
 		display: flex;

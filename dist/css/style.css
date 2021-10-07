@@ -1862,15 +1862,6 @@ main {
 	background-color: #11103e;
 }
 
-.site-footer::before {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 30%;
-	width: 298px;
-	height: 93px;
-	background-repeat: no-repeat;
-}
 
 .site-footer a {
 	color: #ababc9;
